@@ -91,6 +91,16 @@ class DadataWidget(forms.TextInput):
                        )
                } 
 
+class DadataAddressWidget(DadataWidget):
+    """
+    Russian address select input.
+    Uses dadata.ru JQuery plugin for suggestions.
+    """
+    widget_type = 'ADDRESS'
+    jscode = """$(linked_fields['lat']).val(suggestion.data.geo_lat);
+                $(linked_fields['lon']).val(suggestion.data.geo_lon);
+             """
+        
 class DadataOrgWidget(DadataWidget):
     """
     Russian organisation select input.
