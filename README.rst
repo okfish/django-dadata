@@ -10,7 +10,7 @@ Quickstart
 
 Install django-dadata::
 
-    pip install -e git+https://github.com/okfish/django-dadata/django-dadata.git#egg=django-dadata
+    pip install -e git+https://github.com/okfish/django-dadata.git#egg=django-dadata
 
 Then use it in a project::
 
